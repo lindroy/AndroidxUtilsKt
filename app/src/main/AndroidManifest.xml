@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lindroy.androidxutilskt">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidxUtilsKt">
+        <activity android:name=".activity.KeyboardActivity"></activity>
+        <activity android:name=".activity.SDCardActivity" />
+        <activity android:name=".activity.IntentActivity" />
+        <activity android:name=".activity.ScreenActivity" />
+        <activity android:name=".activity.BrightnessActivity" />
+        <activity android:name=".activity.ViewActivity" />
+        <activity android:name=".activity.statusbar.StatusBarActivity" />
+        <activity android:name=".activity.statusbar.StatusBarChangeColorActivity" />
+        <activity android:name=".activity.statusbar.StatusBarImageActivity" />
+        <activity android:name=".activity.statusbar.StatusBarSlideActivity" />
+        <activity android:name=".activity.ToastActivity" />
+        <activity android:name=".activity.AppInfoActivity" />
+        <activity android:name=".activity.CatalogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

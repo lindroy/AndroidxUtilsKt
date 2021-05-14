@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ScreenActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <!--分辨率-->
+    <TextView
+        android:id="@+id/tvResolution"
+        style="@style/MiddleGrayTextStyle" />
+
+    <!--屏幕密度-->
+    <TextView
+        android:id="@+id/tvDensity"
+        style="@style/MiddleGrayTextStyle"
+        android:layout_marginTop="5dp" />
+
+    <!--Dpi-->
+    <TextView
+        android:id="@+id/tvDpi"
+        style="@style/MiddleGrayTextStyle"
+        android:layout_marginTop="5dp" />
+
+    <!--屏幕方向-->
+    <TextView
+        android:id="@+id/tvOrientation"
+        style="@style/MiddleGrayTextStyle"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnLandscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="横屏" />
+
+    <Button
+        android:id="@+id/btnPortrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="竖屏" />
+
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="锁屏" />
+
+    <Button
+        android:id="@+id/btnUnlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消锁屏" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            style="@style/MiddleGrayTextStyle"
+            android:layout_gravity="start|center_vertical"
+            android:text="设置屏幕长亮" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swScreenOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:checked="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            style="@style/MiddleGrayTextStyle"
+            android:layout_gravity="start|center_vertical"
+            android:text="设置全屏" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:checked="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" />
+
+    <FrameLayout
+        android:id="@+id/flLockTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            style="@style/MiddleGrayTextStyle"
+            android:layout_gravity="start|center_vertical"
+            android:text="点击设置自动锁屏时间" />
+
+        <TextView
+            android:id="@+id/tvLockTime"
+            style="@style/MiddleGrayTextStyle"
+            android:layout_gravity="end|center_vertical"
+            android:text="跟随系统" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" />
+</LinearLayout>

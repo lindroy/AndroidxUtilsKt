@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llRoot"
+    tools:context=".activity.ViewActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/holo_blue_dark" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnVisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设为Visible"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnInvisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设为Invisible"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnGone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设为Gone"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                style="@style/MiddleGrayTextStyle"
+                android:text="设置View的高度" />
+
+
+            <SeekBar
+                android:id="@+id/sbHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="100" />
+
+            <TextView
+                android:id="@+id/tvWidth"
+                style="@style/MiddleGrayTextStyle"
+                android:text="设置View的宽度" />
+
+            <SeekBar
+                android:id="@+id/sbWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="100" />
+
+            <Button
+                android:id="@+id/btnToBitmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="将View转换为Bitmap"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:id="@+id/ivBitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

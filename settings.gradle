@@ -1,0 +1,3 @@
+include ':androidxutilskt'
+include ':app'
+rootProject.name = "AndroidxUtilsKt"
