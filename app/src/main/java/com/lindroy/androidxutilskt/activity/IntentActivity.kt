@@ -1,6 +1,7 @@
 package com.lindroy.androidxutilskt.activity
 
 import android.annotation.SuppressLint
+import com.lindroy.androidxutilskt.MainActivity
 import com.lindroy.androidxutilskt.R
 import com.lindroy.androidxutilskt.base.BaseActivity
 import com.lindroy.androidxutilskt.extensions.*
@@ -9,7 +10,7 @@ import com.lindroy.androidxutilskt.statics.permission.PermissionUtil
 import kotlinx.android.synthetic.main.activity_intent.*
 
 class IntentActivity(override val contentViewId: Int = R.layout.activity_intent) : BaseActivity() {
-
+    private val num by extraInt("num",0)
 
     override fun initView() {
         initToolBar(R.string.util_intent)

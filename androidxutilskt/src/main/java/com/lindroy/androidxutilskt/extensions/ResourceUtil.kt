@@ -34,25 +34,6 @@ fun getResString(@StringRes stringId: Int, vararg formatArgs: Any) =
     AndUtil.appContext.getString(stringId, *formatArgs)
 
 /**
- * 获取String数组
- */
-@JvmName("getStringArray")
-fun getResStringArray(@ArrayRes arrayId: Int): Array<String> =
-    AndUtil.appContext.resources.getStringArray(arrayId)
-
-/**
- * 获取Int数组
- */
-@JvmName("getIntArray")
-fun getResIntArray(@ArrayRes arrayId: Int) = AndUtil.appContext.resources.getIntArray(arrayId)
-
-/**
- * 获取Char数组
- */
-@JvmName("getTextArray")
-fun getResTextArray(@ArrayRes arrayId: Int): Array<CharSequence> = AndUtil.appContext.resources.getTextArray(arrayId)
-
-/**
  * 获取dimens资源
  * 单位为px
  */
@@ -73,3 +54,22 @@ fun getResDimenDp(@DimenRes dimenRes: Int) =
 @JvmName("getDimenSp")
 fun getResDimenSp(@DimenRes dimenRes: Int) =
     px2sp(AndUtil.appContext.resources.getDimensionPixelSize(dimenRes))
+
+/**
+ * 获取String数组
+ */
+@JvmName("getStringArray")
+fun getResStringArray(@ArrayRes arrayId: Int): Array<String> =
+    AndUtil.appContext.resources.getStringArray(arrayId)
+
+/**
+ * 获取Int数组
+ */
+@JvmName("getIntArray")
+fun getResIntArray(@ArrayRes arrayId: Int) = AndUtil.appContext.resources.getIntArray(arrayId)
+
+/**
+ * 获取Char数组
+ */
+@JvmName("getTextArray")
+fun getResTextArray(@ArrayRes arrayId: Int): Array<CharSequence> = AndUtil.appContext.resources.getTextArray(arrayId)

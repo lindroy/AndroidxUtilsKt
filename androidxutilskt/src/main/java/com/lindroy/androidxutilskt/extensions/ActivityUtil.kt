@@ -18,6 +18,7 @@ import java.io.Serializable
  */
 /**
  * 启动一个Activity
+ * @receiver:Context
  */
 inline fun <reified T : Activity> Context.launchActivity(
     intent: Intent? = null
@@ -32,6 +33,7 @@ inline fun <reified T : Activity> Context.launchActivity(
 
 /**
  * 启动一个Activity，并传递参数
+ * @receiver:Context
  */
 inline fun <reified T : Activity> Context.launchActivity(vararg extras: Pair<String, Any?>) {
     startActivity(Intent(this, T::class.java).apply {
