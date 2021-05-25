@@ -46,7 +46,7 @@ dependencies {
 ### ActivityUtil：Activity工具类
 
 | 成员名称  | 作用  | 接收类  | 备注  |
-| ------------ | ------------ | :------------: | ------------ | :----------: |
+| ------------ | ------------ | :------------: | :----------: |
 | launchActivity()   | 启动一个Activity，可传递Intent  |  Context  |  启动的Activity作为泛型传入  |
 | launchActivity()   |启动一个Activity，并传递参数  | Context | 启动的Activity作为泛型传入 |
 | launchActivityForResult() | 启动一个Activity但不传递数据，并获得回调 | FragmentActivity | 启动的Activity作为泛型传入 |
