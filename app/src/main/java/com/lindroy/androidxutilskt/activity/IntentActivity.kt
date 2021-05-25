@@ -1,8 +1,6 @@
 package com.lindroy.androidxutilskt.activity
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.lindroy.androidxutilskt.R
 import com.lindroy.androidxutilskt.base.BaseActivity
 import com.lindroy.androidxutilskt.extensions.*
@@ -18,6 +16,7 @@ class IntentActivity(override val contentViewId: Int = R.layout.activity_intent)
     }
 
 
+    @SuppressLint("MissingPermission")
     override fun initOnClick() {
         super.initOnClick()
         //打开系统设置

@@ -3,6 +3,7 @@ package com.lindroy.androidxutilskt
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
+import com.lindroy.androidxutilskt.extensions.setSpDefaultFile
 import java.lang.reflect.InvocationTargetException
 
 /**
@@ -15,9 +16,13 @@ object AndUtil {
 
     private var app: Application? = null
 
+    /**
+     * 如果反射获取Application失效的话，可以使用此初始化方法
+     */
     @JvmStatic
-    fun init(application: Application) {
-        this.app = application
+    fun init(application: Application): Config {
+        app = application
+        return Config.build()
     }
 
     val application by lazy {
@@ -42,9 +47,18 @@ object AndUtil {
            }
            app!!
        }
-
     }
 
 
     val appContext: Context by lazy { application.applicationContext }
+
+    class Config{
+        companion object{
+            fun build() = Config()
+        }
+        /**
+         * 设置默认的SharePreference表名
+         */
+        fun setDefaultSpFile(fileName: String) = this.apply { setSpDefaultFile(fileName) }
+    }
 }

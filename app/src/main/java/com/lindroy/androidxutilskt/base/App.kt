@@ -1,6 +1,7 @@
 package com.lindroy.androidxutilskt.base
 
 import android.app.Application
+import com.lindroy.androidxutilskt.AndUtil
 import com.youngfeng.snake.Snake
 
 /**
@@ -11,6 +12,8 @@ import com.youngfeng.snake.Snake
 class App: Application() {
     override fun onCreate() {
         super.onCreate()
+        AndUtil.init(this)
+//            .setDefaultSpFile()
         Snake.init(this)
     }
 }

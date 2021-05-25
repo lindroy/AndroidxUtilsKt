@@ -1,7 +1,5 @@
 package com.lindroy.androidxutilskt.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.view.View
 import com.lindroy.androidxutilskt.R
 import com.lindroy.androidxutilskt.base.BaseActivity
