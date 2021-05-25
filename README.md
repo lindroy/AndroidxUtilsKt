@@ -28,10 +28,9 @@
 
 ```
 dependencies {
-    implementation 'com.github.lindroy:AndroidxUtilsKt:latest-version'
+     implementation 'com.github.lindroy:AndroidxUtilsKt:0.0.1-beta'
 }
 ```
-`latest-version`参见图标`jitpack`后面的版本号。
 
 ### 3、在Application中初始化（非必需）
 
