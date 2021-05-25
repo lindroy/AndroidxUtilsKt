@@ -1,8 +1,8 @@
-# AndroidUtilsKt
+# AndroidxUtilsKt
 
-[![](https://jitpack.io/v/Lindroy/AndroidxUtilsKt.svg)](https://jitpack.io/#Lindroy/AndroidxUtilsKt)
+[![](https://www.jitpack.io/v/lindroy/AndroidxUtilsKt.svg)](https://www.jitpack.io/#lindroy/AndroidxUtilsKt)
 
-使用`kotlin`编写的Android工具类，主要采用扩展函数的方式。目前还在不断补充中。
+使用`kotlin`编写的Android工具类，兼容`Androidx`，主要采用扩展函数的方式。目前还在不断补充中。
 
 本说明文档遵循如下的规则：
 
@@ -28,7 +28,7 @@
 
 ```
 dependencies {
-    implementation 'com.github.Lindroy:AndroidUtilsKt:latest-version'
+    implementation 'com.github.lindroy:AndroidxUtilsKt:latest-version'
 }
 ```
 `latest-version`参见图标`jitpack`后面的版本号。
